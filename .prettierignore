@@ -1,0 +1,13 @@
+# nextjs
+apps/nextjs-app/.next
+apps/nextjs-app/public
+apps/nextjs-app/node_modules
+
+# react-native
+apps/mobile-app/.bundle
+apps/mobile-app/vendor
+apps/mobile-app/ios/Pods
+apps/mobile-app/node_modules
+
+# nodejs
+node_modules

@@ -1,0 +1,5 @@
+.bundle
+
+node_modules
+vendor
+ios/Pods

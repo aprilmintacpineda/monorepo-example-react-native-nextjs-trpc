@@ -1,0 +1,40 @@
+{
+  "name": "nextjs-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ts-check": "tsc --noEmit",
+    "eslint": "eslint . --fix",
+    "prettier": "prettier . --write",
+    "lint": "npm run prettier && npm run eslint"
+  },
+  "dependencies": {
+    "@my-app/shared": "*",
+    "@tanstack/react-query": "^4.26.1",
+    "@trpc/client": "^10.15.0",
+    "@trpc/next": "^10.15.0",
+    "@trpc/react-query": "^10.15.0",
+    "@trpc/server": "^10.15.0",
+    "eslint": "^8.36.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/typescript-estree": "^5.54.1",
+    "eslint-config-next": "^13.2.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.4"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@my-app/shared",
+  "version": "1.0.0",
+  "dependencies": {
+    "@trpc/server": "^10.15.0",
+    "eslint": "^8.36.0",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/typescript-estree": "^5.54.1",
+    "eslint": "^8.36.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.4",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "ts-check": "tsc --noEmit",
+    "eslint": "eslint . --fix",
+    "prettier": "prettier . --write",
+    "lint": "npm run prettier && npm run eslint"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
