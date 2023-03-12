@@ -3,7 +3,7 @@ const unusedVarsIgnorePattern = '^_[0-9]+$';
 module.exports = {
   settings: {
     react: {
-      version: 'detect'
+      version: '18'
     },
     'import/ignore': ['react-native']
   },
