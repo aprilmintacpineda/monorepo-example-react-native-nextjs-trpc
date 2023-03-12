@@ -12,6 +12,7 @@
     "dev:nextjs": "yarn --cwd apps/nextjs-app dev",
     "dev:rn": "yarn --cwd apps/mobile-app start",
     "pod:install": "yarn --cwd apps/mobile-app pod:install",
+    "run:android": "yarn --cwd apps/mobile-app android",
     "ts-check": "tsc --noEmit",
     "eslint": "eslint . --fix",
     "prettier": "prettier . --write",

@@ -3,17 +3,20 @@ import {
   QueryClientProvider
 } from '@tanstack/react-query';
 import { httpBatchLink } from '@trpc/client';
+import { Platform } from 'react-native';
+import Config from 'react-native-config';
 import Hello from 'src/components/Hello';
 import { trpc } from './utils/trpc';
 
 function getBaseUrl () {
-  // if (process.env.HOSTNAME)
-  //   // for live
-  //   return `http://${process.env.HOSTNAME}`;
+  if (Config.HOSTNAME)
+    // for live
+    return `http://${Config.HOSTNAME}`;
 
-  // // assume localhost
-  // return `http://localhost:${process.env.PORT ?? 3000}`;
-  return 'http://localhost:3000';
+  // assume localhost
+  return Platform.OS === 'android'
+    ? 'http://10.0.2.2:3000'
+    : 'http://localhost:3000';
 }
 
 const trpcClient = trpc.createClient({
