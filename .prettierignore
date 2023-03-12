@@ -7,7 +7,11 @@ apps/nextjs-app/node_modules
 apps/mobile-app/.bundle
 apps/mobile-app/vendor
 apps/mobile-app/ios/Pods
+apps/mobile-app/ios/build
 apps/mobile-app/node_modules
+apps/mobile-app/android/app/build
+apps/mobile-app/ios/AwesomeProject/Images.xcassets
+apps/mobile-app/.watchmanconfig
 
 # nodejs
 node_modules
